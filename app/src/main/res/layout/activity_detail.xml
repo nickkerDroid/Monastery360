@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF5FDFF"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image header with rounded corners and shadow -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imgMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enchey Monastery"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <!-- Description inside card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="This monastery is located near Gangtok and offers a breathtaking view of the Kanchenjunga range."
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#444"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Buttons row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn360"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Open 360"
+                app:backgroundTint="#6750A3"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                app:backgroundTint="#6750A3"
+                android:text="Play Audio"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <!-- Open map button full width -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/open_in_maps"
+            app:backgroundTint="#6750A3"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:icon="@drawable/baseline_location_on_24"
+            app:iconPadding="8dp"
+            app:iconTint="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

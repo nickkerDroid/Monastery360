@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="monastery_array">
+        <item>Rumtek</item>
+        <item>Lachung</item>
+        <item>Enchey</item>
+        <item>Phodong</item>
+        <item>Dubdi</item>
+    </string-array>
+</resources>

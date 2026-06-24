@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Monastery360" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Serene Monastery Theme colors -->
+        <item name="colorPrimary">@color/serene_primary</item>
+        <item name="colorSecondary">@color/serene_secondary</item>
+        <item name="android:colorBackground">@color/serene_background</item>
+        <item name="colorAccent">@color/serene_accent</item>
+
+        <!-- Optional: Set status bar color if needed -->
+        <item name="android:statusBarColor">@color/serene_background</item>
+        <!-- Optional: For Material3 components -->
+        <item name="colorPrimaryContainer">@color/serene_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item> <!-- Or a light contrast color for maroon -->
+        <item name="colorSecondaryContainer">@color/serene_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/black</item> <!-- Or a dark contrast for gold -->
+        <item name="colorSurface">@color/serene_background</item>
+        <item name="colorOnSurface">@color/black</item> <!-- Text color on background -->
+        <item name="android:windowBackground">@color/serene_background</item>
+
+        <!-- Typography (initial setup, specific font application might need more) -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Default body font -->
+        <item name="fontFamily">@font/roboto</item> <!-- Default body font for Material Components -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.App.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.App.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.App.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.App.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.App.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body1</item>
+        <!-- Add other text appearances as needed -->
+
+    </style>
+
+    <style name="Theme.Monastery360" parent="Base.Theme.Monastery360" />
+
+    <!-- Typography Styles -->
+    <style name="TextAppearance.App.Headline1" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+    <style name="TextAppearance.App.Headline2" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+    <style name="TextAppearance.App.Headline3" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+    <style name="TextAppearance.App.Headline4" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+    <style name="TextAppearance.App.Headline5" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+
+    <style name="TextAppearance.App.Body1" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <!-- You might want to define TextAppearance.App.Body2, Button, Caption, etc. similarly -->
+
+</resources>

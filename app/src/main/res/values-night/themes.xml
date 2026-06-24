@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Monastery360" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Serene Monastery Theme colors -->
+        <item name="colorPrimary">@color/serene_primary</item>
+        <item name="colorSecondary">@color/serene_secondary</item>
+        <item name="android:colorBackground">@color/serene_background</item> <!-- Consider a darker background for night mode if preferred -->
+        <item name="colorAccent">@color/serene_accent</item>
+
+        <!-- Optional: Set status bar color if needed -->
+        <!-- <item name="android:statusBarColor">@color/serene_primary_dark</item> -->
+        <!-- Optional: For Material3 components -->
+        <item name="colorPrimaryContainer">@color/serene_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondaryContainer">@color/serene_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+        <item name="colorSurface">@color/serene_background</item> <!-- Consider a darker surface for night mode -->
+        <item name="colorOnSurface">@color/black</item> <!-- Ensure good contrast on the chosen surface -->
+        <item name="android:windowBackground">@color/serene_background</item>
+
+        <!-- Typography (initial setup, specific font application might need more) -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Default body font -->
+        <item name="fontFamily">@font/roboto</item> <!-- Default body font for Material Components -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.App.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.App.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.App.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.App.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.App.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body1</item>
+        <!-- Add other text appearances as needed -->
+
+    </style>
+
+    <!-- Typography Styles are typically defined in the non-night values/themes.xml and are inherited -->
+    <!-- No need to redefine them here unless you want different typography for night mode -->
+
+</resources>

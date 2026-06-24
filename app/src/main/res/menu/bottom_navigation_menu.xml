@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_monastery_info"
+        android:icon="@drawable/baseline_info_24"
+        android:title="@string/about"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/navigation_travel_hotels"
+        android:icon="@drawable/baseline_travel_explore_24"
+        android:title="@string/title_travel_trips"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/fab_place_center"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_cabs"
+        android:icon="@drawable/outline_directions_car_24"
+        android:title="@string/cabs"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_calendar_events"
+        android:icon="@drawable/baseline_event_24"
+        android:title="@string/title_events"
+        app:showAsAction="ifRoom"/>
+</menu>

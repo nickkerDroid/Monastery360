@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/events_fragment_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Calendar View -->
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerColor="@color/serene_primary"
+            app:selectionColor="@android:color/holo_blue_light"
+            app:todayLabelColor="@color/black"
+            app:selectionLabelColor="@color/serene_secondary"
+            app:swipeEnabled="true"
+            app:eventsEnabled="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Upcoming Events Label -->
+        <TextView
+            android:id="@+id/tvUpcomingEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming &amp; Ongoing Events"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Events List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="70dp"
+            tools:listitem="@layout/item_event" />
+
+    </LinearLayout>
+</ScrollView>

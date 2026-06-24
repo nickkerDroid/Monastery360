@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="serene_primary">#800020</color>
+    <color name="serene_secondary">#FFD700</color>
+    <color name="serene_background">#F5F5DC</color>
+    <color name="serene_accent">#2E8B57</color>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF5FDFF"
+    tools:context=".monastaries.DubdiFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image header with rounded corners and shadow -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Dots indicator under the image card -->
+        <LinearLayout
+            android:id="@+id/dotsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dubdi Monastery"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <!-- Description inside card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/perched_on_a_hill_above_yuksom_in_west_sikkim_dubdi_monastery_1701_is_the_oldest_monastery_in_the_state_and_a_key_landmark_in_sikkim_s_buddhist_history_surrounded_by_dense_forests_and_offering_stunning_views_of_the_mountains_it_is_a_peaceful_destination_for_both_spiritual_seekers_and_nature_lovers_the_monastery_houses_ancient_manuscripts_rare_buddhist_relics_and_traditional_paintings"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#444"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vis_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/best_time_to_visit"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#444"
+                    android:layout_gravity="center_vertical"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/div1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    app:dividerColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/vis_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/between_march_and_may_for_pleasant_weather_and_blooming_rhododendrons_nbetween_october_and_november_for_clear_skies_and_excellent_views_of_the_himalayas"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#444"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/tips"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#444"
+                    android:layout_gravity="center_vertical"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    app:dividerColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text= "@string/from_yuksom_you_will_trek_for_about_an_hour_which_involves_a_climb_to_reach_the_monastery_perched_on_a_hilltop_surrounded_by_forest_nwear_sturdy_shoes_for_the_hike_and_be_prepared_for_a_steep_incline"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#444" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Buttons row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn360"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/open_360"
+                app:backgroundTint="#6750A3"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                app:backgroundTint="#6750A3"
+                android:text="@string/play_audio"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <!-- Open map button full width -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/open_in_maps"
+            app:backgroundTint="#6750A3"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:icon="@drawable/baseline_location_on_24"
+            app:iconPadding="8dp"
+            app:iconTint="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
