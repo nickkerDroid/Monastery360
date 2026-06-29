@@ -1,6 +1,6 @@
 # Monastery360 - A Spiritual Virtual Tour 🧘‍♂️🕉️
 
-![Status](https://img.shields.io/badge/Status-Archived%20(Personal%20Project)-lightgrey)
+![Status](https://img.shields.io/badge/Status-Archived%20(Hackathon%20Project)-lightgrey)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
